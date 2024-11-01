@@ -35,8 +35,8 @@ async function fetchWeatherCityOne(lat, lon) {
     const now = new Date();
     const currentHour = now.getHours();
     const temperature = data.hourly.temperature_2m[currentHour].toFixed(2);
-    
-    document.getElementById("temperature-one").innerText = `${temperature} °F`;
+    const tempInC = ((temperature - 32) * 5/9).toFixed(2);
+    document.getElementById("temperature-one").innerText = `${temperature} °F / ${tempInC} °C`;
 }
 
 fetchWeatherCityOne(cityOneLat, cityOneLon);
@@ -49,8 +49,8 @@ async function fetchWeatherCityTwo(lat, lon) {
     const now = new Date();
     const currentHour = now.getHours();
     const temperature = data.hourly.temperature_2m[currentHour].toFixed(2);
-    
-    document.getElementById("temperature-two").innerText = `${temperature} °F`;
+    const tempInC = ((temperature - 32) * 5/9).toFixed(2);
+    document.getElementById("temperature-two").innerText = `${temperature} °F / ${tempInC} °C`;
 }
 
 fetchWeatherCityTwo(cityTwoLat, cityTwoLon);

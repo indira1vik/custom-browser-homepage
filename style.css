@@ -70,7 +70,7 @@ header {
 .temp-class {
     display: flex;
     margin: 24px;
-    width: 9em;
+    width: 16em;
     justify-content: space-between;
 }
 
