@@ -56,19 +56,14 @@ const linksData = [
 
 const cities = [
     {
-        "name": "Tempe",
-        "lat": 33.3898,
-        "lon": -111.9344
+        "name": "New York",
+        "lat": 43.0000,
+        "lon": -75.0000
     },
     {
-        "name": "Mysore",
-        "lat": 12.2921,
-        "lon": 76.6153
-    },
-    {
-        "name": "Trichy",
-        "lat": 10.7753, 
-        "lon": 78.7706
+        "name": "Chennai",
+        "lat": 13.0674,
+        "lon": 80.2376
     }
 ];
 
